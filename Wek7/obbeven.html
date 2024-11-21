@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Demo</title>
+</head>
+<body>
+    <h1>JavaScript Demo</h1>
+    <input type="text" id="a_value">
+    <p id="result"></p>
+    <button onclick="calculate()">Calculate</button>
+    <button onclick="reset()">Reset</button>
+    <script>
+function calculate() {
+  var a = document.getElementById("a_value").value;
+  var b = document.getElementById("b_value").value;
+  var result = parseInt(a) + parseInt(b);
+  if (a % 2 == 0) {
+    result = "Even";
+  } else {
+    result = "Odd";
+  }
+  var result = 1;
+  for (var i = 1; i <= a; i++) {
+    result *= i;
+  }
+  var output = "Result: "
+  document.getElementById("result").innerHTML = output + result;
+}
+    </script>
+</body>
+</html>
